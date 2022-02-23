@@ -1,0 +1,4 @@
+<div *ngFor="let book of books">
+  {{ book.volumeInfo.title }} 'written by ' {{ book.volumeInfo.authors }}
+  <button (click)="removeFromFavourite(book.id)">Remove From Favourite</button>
+</div>

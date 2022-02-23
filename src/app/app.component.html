@@ -1,0 +1,8 @@
+<app-book-list
+  [books]="books$ | async"
+  (eventAddToFavourite)="addToFavourite($event)"
+></app-book-list>
+<app-book-collection
+  [books]="collection$ | async"
+  (removeFavourite)="removeFromFavourite($event)"
+></app-book-collection>
